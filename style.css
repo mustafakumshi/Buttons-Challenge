@@ -1,0 +1,74 @@
+/* Buttons Challenge */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  background-color: gray;
+}
+.wrapper {
+  position: relative;
+  width: 900px;
+  height: 700px;
+  margin: 0 auto;
+  padding: 0;
+  border: 3px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: lightblue;
+}
+
+.btn {
+  width: 250px;
+  height: 100px;
+  text-align: center;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 0px 0px black;
+  font-size: 25px;
+  font-weight: 600;
+  color: black;
+  cursor: pointer;
+}
+
+.btn-a {
+  background-color: pink;
+  border: 5px solid red;
+}
+
+.btn-b {
+  background-color: cyan;
+  border: 5px solid darkcyan;
+}
+
+.btn-c {
+  background-color: yellow;
+  /* border: 5px solid green; */
+}
+
+.btn-d {
+  background-color: gray;
+  border: 5px solid purple;
+}
+
+.btn-e {
+  background-color: cornflowerblue;
+  border: 5px solid indigo;
+}
+
+.btn-c:active {
+  border: 5px solid green;
+}
+
+#button-click:active ~ .btn-a {
+  border: none;
+}
